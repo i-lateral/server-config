@@ -19,6 +19,6 @@ server {
     access_log  /var/log/nginx/$project.access.log  main;
     error_log /var/log/nginx/$project.error.log;
 
-    include conf.d/includes/maintenance.inc;
-    include conf.d/includes/silverstripe.inc;
+    include /srv/server-config/nginx/includes.d/maintenance.inc;
+    include /srv/server-config/nginx/includes.d/silverstripe.inc;
 }
