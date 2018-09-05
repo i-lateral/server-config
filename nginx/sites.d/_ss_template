@@ -1,0 +1,24 @@
+# Redirects www to top level
+server {
+    listen	 80;
+    server_name  <www_url>;
+    return	 301 <redirect_url>$request_uri;
+}
+
+# Main website
+server {
+    set $user <user>;
+    set $project <project-name>;
+    set $socket /var/run/php-fpm/php5-fpm.sock;
+    server_name <url>;
+
+    listen 80;
+    root /home/$user/webroot;
+
+    #charset koi8-r;
+    access_log  /var/log/nginx/$project.access.log  main;
+    error_log /var/log/nginx/$project.error.log;
+
+    include conf.d/includes/maintenance.inc;
+    include conf.d/includes/silverstripe.inc;
+}
