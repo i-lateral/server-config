@@ -13,7 +13,7 @@ server {
     server_name <url>;
 
     listen 80;
-    root /home/$user/webroot;
+    root /home/$user/$project/current;
 
     #charset koi8-r;
     access_log  /var/log/nginx/$project.access.log  main;
