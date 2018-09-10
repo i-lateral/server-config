@@ -7,7 +7,7 @@ if ($http_x_forwarded_host) {
 }
 
 location / {
-    try_files $uri index.php?$query_string;
+    try_files $uri /index.php?$query_string;
 }
 
 error_page 404 /assets/error-404.html;
