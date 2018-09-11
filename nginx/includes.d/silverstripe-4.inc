@@ -49,10 +49,11 @@ location /index.php {
     fastcgi_busy_buffers_size 64k;
     fastcgi_buffers 4 32k;
     fastcgi_keep_conn on;
+
+    include        fastcgi_params;
     fastcgi_pass   unix:$socket;
     fastcgi_index  index.php;
     fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
-    include        fastcgi_params;
 }
 
 location ~ /\.. {
