@@ -70,3 +70,6 @@ php_value[session.save_handler] = files
 php_value[session.save_path]    = /home/$pool/session
 php_value[soap.wsdl_cache_dir]  = /var/lib/php/wsdlcache
 ;php_value[opcache.file_cache]  = /var/lib/php/opcache
+
+; Hide PHP from the browser
+php_value[expose_php] = off
