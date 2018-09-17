@@ -9,7 +9,7 @@ server {
 server {
     set $user <user>;
     set $project <project-name>;
-    set $socket /var/run/php-fpm/php5-fpm.sock;
+    set $socket /var/run/php-fpm/$user.sock;
     server_name <url>;
 
     listen 80;
