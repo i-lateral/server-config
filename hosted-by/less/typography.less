@@ -1,0 +1,138 @@
+@import "vars.less";
+
+/* Kube */
+@import "kube/mixins.less";
+@import "kube/reset.less";
+@import "kube/typo.less";
+
+
+/* Silverstripe Styling
+-------------------------------------------- */
+
+/* LIST STYLES
+-------------------------------------------- */
+.typography ul,
+.typography ol {
+    margin: 0 0 0.5em 24px;
+}
+.typography li {
+    margin: 0 0 0.5em 0;
+}
+
+/* HEADER STYLES
+-------------------------------------------- */
+.typography h1 {
+    font-size: 4em;
+    font-weight: normal;
+    margin-bottom: 1em;
+    color: @colorGrayDark;
+    text-transform: lowercase;
+}
+
+.typography h2 {
+    font-size: 1.4em;
+    font-weight: normal;
+    color: @colorGrayDark;
+    text-transform: lowercase;
+}
+
+.typography h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: @colorGrayDark;
+    text-transform: lowercase;
+}
+
+.typography h4 {
+    font-size: 1em;
+    font-weight: normal;
+    color: @colorGrayDark;
+    text-transform: lowercase;
+}
+
+.typography h5 {
+    font-size: 1em;
+    font-weight: normal;
+    color: @colorGrayDark;
+    text-transform: lowercase;
+}
+
+.typography h6 {
+    font-size: 1em;
+    font-weight: normal;
+    color: @colorGrayDark;
+    text-transform: lowercase;
+}
+
+/* Body Copy
+------------------------------------------------------ */
+.typography p {
+    margin-bottom: 3em;
+}
+
+/* Legend Headings
+--------------------------------------------------------------------- */
+
+h1.legend,
+h2.legend,
+h3.legend,
+h4.legend,
+h5.legend,
+h6.legend, {
+    position: relative;
+    text-align: center;
+    margin: 1.75em 0;
+
+    &:before {
+        background: none repeat scroll 0 0 @colorGrayDark;
+        content: "";
+        height: 1px;
+        left: 0;
+        margin-top: 1px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+    }
+    span {
+        background: none repeat scroll 0 0 @colorWhite;
+        color: @colorGrayDark;
+        padding: 0 10px;
+        position: relative;
+        z-index: 99;
+    }
+}
+
+/* WYSIWYG EDITOR ALIGNMENT CLASSES
+-------------------------------------------- */
+.typography .left {
+    text-align: left;
+}
+.typography .center {
+    text-align: center;
+}
+.typography .right {
+    text-align: right;
+}
+
+/* IMAGES
+-------------------------------------------- */
+.typography img {
+    border: none;
+}
+.typography img.right {
+    float: right;
+    margin-left: 20px;
+}
+.typography img.left {
+    float: left;
+}
+.typography img.leftAlone {
+    float: left;
+    margin-right: 100%;
+}
+.typography img.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

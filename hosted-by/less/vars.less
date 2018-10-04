@@ -1,0 +1,107 @@
+// All base variables for this project
+
+// Fonts
+@font-face {
+    font-family: urw-gothicl-demi;
+    src: url('../fonts/URWGothicL-Demi.eot');
+    src: local("☺"),
+         url('../fonts/URWGothicL-Demi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/URWGothicL-Demi.woff') format('woff'),
+         url('../fonts/URWGothicL-Demi.ttf') format('truetype'),
+         url('../fonts/URWGothicL-Demi.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url('../fonts/websymbols-regular-webfont.eot');
+    src: local("☺"),
+         url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//top bar
+@barWidth: 3px;
+
+// Font
+@baseFontFamily: Helvetica, Arial, Verdana, sans-serif, Times, serif;
+@headingsFontFamily: "urw-gothicl-demi", Helvetica, Arial, Verdana, sans-serif, Times, serif;
+@inputFontFamily: @baseFontFamily;
+@buttonFontFamily: @baseFontFamily;
+@codeFontFamily: Consolas, Monaco, monospace, sans-serif;
+
+// Base color
+@colorBody: @colorGray;
+@colorHeadings: @colorGrayDark;
+
+// Type
+@baseFontSize: 14;
+@baseLineHeight: 1.65;
+@baseLine: @baseFontSize * @baseLineHeight;
+
+// Grid
+@gridWidth: 1000;
+@gridGutterWidth: 75;
+
+// Misc sizes
+@listsLeft: 2em;
+@columnarWidth: 150px;
+@columnarMargin: 20px;
+
+// Font sizes
+@bigFontSize: 1.2em;
+@smallFontSize: 0.85em;
+@superSmallFontSize: 0.7em;
+
+// FloatingImages
+@floatingMargin: 1em;
+@floatingBackgroundColor: #fff;
+@floatingPadding: 0;
+@floatingBorder: none;
+
+// LinkColor
+@colorLink: @colorOrange;
+@colorLinkHover: @colorOrange;
+
+// Colors
+@colorBlack: #000;
+@colorGrayDark: #444;
+@colorGray: #666;
+@colorGrayLight: #a2a2a2;
+@colorWhite: #fff;
+@colorRed: #ef6465;
+@colorOrange: #fd7f00;
+@colorGreen: #90af45;
+@colorBlue: #1c7ab4;
+@colorYellow: #f3c835;
+
+// BackgroundColor
+@markBackgroundColor: #fe5;
+@codeBackgroundColor: #f5f5f5;
+@tfootBackgroundColor: #f2f2f2;
+@colorStripedTable: #f5f5f5;
+@colorHoveredTable: #f6f6f6;
+
+// Borders
+@cellBorder: 1px solid #eee;
+@cellBorderDark: 1px solid #ddd;
+@fieldsetBorder: 1px solid #e3e3e3;
+
+// Util
+@em: @baseFontSize*1em; // outputting ems, e.g. 14/@em
+
+// Metrics
+@siteWidth: 980px;
+@wrapperPadd: 20px;
+@contentPadding: 20px;
+@mobileWidth: 550px;
+
+// Font Sizes
+@fontSmall: 0.7em;
+@fontMed: 1em;
+@fontLarge: 1.2em;
