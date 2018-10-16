@@ -86,3 +86,26 @@ location ~* composer\.(json|lock)$ {
     deny all;
 }
 
+# Enable GZIP compression for relevent files
+# Thanks to this post for the example:
+# https://stackoverflow.com/questions/12640014/enable-gzip-for-css-and-js-files-on-nginx-server-for-magento#12644530
+gzip on;
+gzip_disable "msie6";
+
+gzip_comp_level 6;
+gzip_min_length 1100;
+gzip_buffers 16 8k;
+gzip_proxied any;
+gzip_types
+    text/plain
+    text/css
+    text/js
+    text/xml
+    text/javascript
+    application/javascript
+    application/x-javascript
+    application/json
+    application/xml
+    application/rss+xml
+    image/svg+xml;
+
