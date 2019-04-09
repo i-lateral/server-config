@@ -2,12 +2,12 @@
 client_max_body_size 100M;
 
 location / {
-  # URLs to attempt, including pretty ones.
-  try_files $uri /index.php?$query_string;
+    # URLs to attempt, including pretty ones.
+    try_files $uri /index.php?$query_string;
 }
 
 # Handle CSS, JS, images, icons, video, audio, HTC
-location ~* \.(?:css|js|jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc|woff|woff2|ttf|otf|eot)$$
+location ~* \.(?:css|js|jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc|woff|woff2|ttf|otf|eot)$ {
     add_header Pragma public;
     add_header Cache-Control "public";
     sendfile on;
