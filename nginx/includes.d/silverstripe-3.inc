@@ -1,4 +1,5 @@
 # Settings to use for a Silverstripe install in Nginx
+client_max_body_size 0; # Manage this in php.ini (upload_max_filesize & post_max_size);
 
 # Defend against SS-2015-013 -- http://www.silverstripe.org/software/download/security-releases/ss-2015-013
 if ($http_x_forwarded_host) {
